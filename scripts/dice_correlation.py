@@ -100,7 +100,7 @@ def dice_roi(input_dir, output_dir, atlas1, atlas2):
 
     #Save Dice map to csv file, comma delimited
     np.savetxt(f'{output_dir}/{png_name}.csv', Dice, delimiter=",")
-
+    np.savetxt(f'{output_dir}/{png_name}.txt', Dice, delimiter=" ")
     return Dice, labs1, labs2
     print('Done')
     
